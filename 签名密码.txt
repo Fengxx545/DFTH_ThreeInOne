@@ -1,0 +1,3 @@
+Key store password:dfth8587
+Key alias:dfth
+Key password:dfth8587
