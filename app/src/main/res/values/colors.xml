@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--主题颜色-->
+    <color name="app_theme_color">#5a79ba</color>
+    <color name="app_theme_text_color">#333333</color>
+    <color name="twelve_color">#fb746b</color>
+    <color name="twelve_color_p">#aafb746b</color>
+    <color name="single_color">#68bc95</color>
+    <color name="standard_font_color">#333333</color>
+    <color name="remarks_font_color">#999999</color>
+
+
+    <!--登录-->
+    <color name="login_btn_default">#769aff</color>
+    <color name="login_btn_text_default">#ffffff</color>
+    <color name="login_btn_p">#4768ac</color>
+    <color name="next_forbid_btn">#e0e0e0</color>
+
+
+
+    <!--基本颜色-->
+    <color name="google_transparent">#00ffffff</color>
+    <color name="google_green">#ff5AAF78</color>
+    <color name="google_green_p1">#5912803B</color>
+    <color name="google_green_p">#515AAF78</color>
+    <color name="google_blue">#ff33B5E5</color>
+    <color name="google_white_alpha">#FFE1E1E1</color>
+    <color name="google_red">#ffaa1f24</color>
+    <color name="google_red_1">#ffcc1f24</color>
+    <color name="google_purple">#FFFF33CC</color>
+    <color name="google_white">#FFFFFFFF</color>
+    <color name="google_black">#ff000000</color>
+    <color name="google_gray">#FF888888</color>
+    <color name="google_orange">#FFFF7D27</color>
+    <color name="google_yellow">#FFf8b62c</color>
+    <color name="google_pink">#FFEC7675</color>
+    <!--measure-->
+    <color name="measure_start_bg">#80000000</color>
+
+    <!--历史-->
+    <color name="bluetooth_connect_tv_color">#769aff</color>
+    <color name="bluetooth_disconnect_tv_color">#333333</color>
+    <color name="separated_bg">#eff2f7</color>
+
+
+    <color name="gray">#FFaaaaaa</color>
+    <color name="standard_line_color">#cbc8c6</color>
+    <color name="disable_color">#727171</color>
+    <color name="amb_grid_color">#5c60a9</color>
+    <color name="amb_night_grid_color">#b9b9b9</color>
+    <color name="history_selector">#1fb5b4</color>
+    <color name="history_selector_circle">#769aff</color>
+    <color name="chart_rect_s_a_s">#7fff9326</color>
+    <color name="nibp_standard_line_color">#e60013</color>
+    <color name="bp_data_item_back">#F7F7F7</color>
+    <color name="bp_data_circle_select_back">#769aff</color>
+
+    <!-- AMBChartView start -->
+    <color name="high_color">#0068b7</color>
+    <!--<color name="low_color">#00ffff</color>-->
+    <color name="low_color">#0E9F38</color>
+    <color name="beat_color">#fd5a51</color>
+    <color name="standard_color">#f8a20f</color>
+    <!-- AMBChartView end -->
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorButton">#5a79ba</color>
+    <color name="colorText">#333333</color>
+    <color name="colorRulerBorder">#1eb4b3</color>
+    <color name="colorRulerLine">#cccccc</color>
+
+    <color name="title_home_back">#4cffffff</color>
+    <color name="title_home_name_text">#769aff</color>
+    <color name="title_member_info_back">#5a79ba</color>
+    <color name="title_my_relative_back">#5a79ba</color>
+    <color name="title_service_record_back">#5a79ba</color>
+    <color name="title_modify_info_back">#5a79ba</color>
+    <color name="title_bp_measure_back">#4596ce</color>
+    <color name="slide_menu_item_back">#f5f4fe</color>
+    <color name="twelve_history_color">#f75352</color>
+    <color name="single_history_color">#59b68b</color>
+    <color name="uncheck_lead">#E5E5E5</color>
+
+
+    <color name="measure_line_color">#45d320</color>
+    <color name="bg_start">#3c3957</color>
+    <color name="bg_center">#066695</color>
+    <color name="bg_end">#302f42</color>
+    <color name="role_back">#00a2cc</color>
+
+    <color name="bp_measure_time_select">#4596CE</color>
+    <color name="bp_measure_time_normal">#EEEEEE</color>
+    <color name="bp_measure_back">#EFF2F7</color>
+    <color name="bp_measure_text">#4E9AD0</color>
+    <color name="bp_measure_bottom">#4596CE</color>
+    <color name="bp_measure_wave_main">#3EBCFF</color>
+    <color name="bp_measure_wave_minor">#41A9E7</color>
+    <color name="bp_measure_no_result_text">#666666</color>
+    <color name="bp_result_back">#FFdddddd</color>
+    <color name="bp_result_dialog_line_color">#cccccc</color>
+    <color name="bp_result_dialog_time_back">#769aff</color>
+    <color name="bp_plan_time_back">#EEEEEE</color>
+
+    <color name="base_history_report_color">#ff72909C</color>
+    <color name="base_history_data_color">#ff5BB87D</color>
+    <color name="base_history_doctor_color">#ffFF9E81</color>
+    <color name="base_history_gray_color">#ff9C9C9C</color>
+
+
+    <color name="calendar_dialog_color">#769aff</color>
+
+    <color name="button_default_text_back">#5a79ba</color>
+
+    <color name="connect_dialog_back">#dd000000</color>
+
+
+    <!--历史记录详细心率线圈-->
+    <color name="history_details_heart_cycle">#ffaa1f24</color>
+    <!--历史记录详细心率线-->
+    <color name="history_details_heart_line">@color/google_white</color>
+
+    <color name="member_info_modify_text">#999999</color>
+    <color name="member_info_modify_line">#cccccc</color>
+    <color name="member_info_contact_back">#F5F5F5</color>
+    <color name="member_info_text_mark">#999999</color>
+
+    <color name="free_service_button">#FBC92C</color>
+
+    <color name="twelve_ecg_heart_chart_back">#FFB0A7</color>
+    <color name="guide_button_text">#769aff</color>
+    <color name="guide_button_line">#769aff</color>
+    <color name="ecg_detail_viewpager_back">#E5E5E5</color>
+
+
+    <color name="single_ecg_measure_bottom_back">#68BC95</color>
+
+
+    <!--心电图 NVSX 颜色-->
+    <color name="normal_heart_beat">#ff000000</color>
+    <color name="ventricular_heart_beat">#ffff0000</color>
+    <color name="atrial_heart_beat">#ff0000ff</color>
+    <color name="disturb_heart_beat">@color/google_purple</color>
+    <color name="integral_details_diamond">#b1ddf1</color>
+
+    <!--杓形 颜色-->
+    <color name="bp_data_dipper">#22ac38</color>
+    <color name="bp_data_opposite_dipper">#e60012</color>
+
+    <color name="ecg_data_uploaded">#999999</color>
+
+    <color name="card_single_theme">#68bc95</color>
+    <color name="card_twelve_theme">#fb746b</color>
+    <color name="card_bp_theme">#38a8ff</color>
+
+</resources>

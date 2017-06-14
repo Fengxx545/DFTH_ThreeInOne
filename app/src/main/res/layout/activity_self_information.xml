@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_btn_text_default"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/selfinfo_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="@string/self_info_tip"
+        android:textColor="@color/standard_font_color" />
+
+    <LinearLayout
+        android:id="@+id/name_ll"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/selfinfo_tip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/self_name_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/login_phone_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:hint="请输入姓名"
+                android:padding="5dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorRulerBorder" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.dftaihua.dfth_threeinone.widget.Switcher
+        android:id="@+id/xswitch"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/name_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:xChangedTime="100"
+        app:xIconHeight="40dp"
+        app:xIconWidth="40dp"
+        app:xLeftIcon="@drawable/lady_default"
+        app:xRadian="30dp"
+        app:xRightIcon="@drawable/man_default" />
+
+    <LinearLayout
+        android:id="@+id/ll_height"
+        android:layout_width="match_parent"
+        android:layout_below="@id/xswitch"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/height"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorText"
+            android:textSize="14dp"
+            tools:text="身高\n170\ncm" />
+
+        <com.dftaihua.dfth_threeinone.widget.Ruler
+            android:id="@+id/ruler2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            app:rBegin="50"
+            app:rBorderColor="@color/colorRulerBorder"
+            app:rBorderWidth="5dp"
+            app:rEnd="250"
+            app:rIsTop="true"
+            app:rLineHeight="10dp"
+            app:rLineToText="6dp"
+            app:rPixel="20"
+            app:rTextSize="10dp"
+            app:rTrigonSize="18dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_weight"
+        android:layout_below="@id/ll_height"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/weiget"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/colorText"
+            android:textSize="14dp"
+            tools:text="@string/default_weight" />
+
+        <com.dftaihua.dfth_threeinone.widget.Ruler
+            android:id="@+id/ruler1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            app:rAnimTime="100"
+            app:rBegin="30"
+            app:rBorderColor="@color/colorRulerBorder"
+            app:rBorderWidth="5dp"
+            app:rEnd="300"
+            app:rLineHeight="10dp"
+            app:rTextSize="10dp"
+            app:rTrigonSize="20dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/complate"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_btn_selector"
+        android:gravity="center"
+        android:text="@string/complete"
+        android:textColor="@color/google_white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/complate"
+        android:layout_below="@id/ll_weight"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/birthday"
+            android:textColor="@color/colorText" />
+
+        <com.dftaihua.dfth_threeinone.widget.DatePicker
+            android:id="@+id/datepicker"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"/>
+    </LinearLayout>
+</RelativeLayout>

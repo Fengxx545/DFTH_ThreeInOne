@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="checked_item">
+        <attr name="checked_name" format="reference"/>
+        <attr name="checked_icon" format="reference"/>
+        <attr name="checked_content_pg" format="reference"/>
+        <attr name="checked_content_text" format="reference"/>
+        <attr name="last_icon" format="reference"/>
+        <attr name="last_icon_text" format="reference"/>
+        <attr name="checked_icon_visible" format="boolean"/>
+        <attr name="checked_content_visible" format="boolean"/>
+        <attr name="checked_clear_visible" format="boolean"/>
+        <attr name="clear_text_color" format="reference"/>
+        <attr name="clear_text" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="Card">
+        <attr name="type" format="integer"/>
+        <attr name="name" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="Ruler">
+        <attr name="rBorderWidth" format="dimension" />
+        <attr name="rBorderColor" format="color" />
+        <attr name="rLineColor" format="color" />
+        <attr name="rTrigonSize" format="dimension" />
+        <attr name="rPixel" format="integer" />
+        <attr name="rStep" format="integer" />
+        <attr name="rLineWidth" format="dimension" />
+        <attr name="rTextSize" format="dimension" />
+        <attr name="rTextColor" format="color" />
+        <attr name="rLineHeight" format="dimension" />
+        <attr name="rLineToText" format="dimension" />
+        <attr name="rBegin" format="integer" />
+        <attr name="rEnd" format="integer" />
+        <attr name="rMinVelocity" format="integer" />
+        <attr name="rAnimTime" format="integer" />
+        <attr name="rIndicateHeight" format="dimension" />
+        <attr name="rIsRect" format="boolean" />
+        <attr name="rIsTop" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="Switcher">
+        <attr name="xRadian" format="dimension" />
+        <attr name="xASPECTRATIO" format="float" />
+        <attr name="xSLIDERRATIO" format="float" />
+        <attr name="xIconWidth" format="dimension" />
+        <attr name="xIconHeight" format="dimension" />
+        <attr name="xBackgroundFromColor" format="color" />
+        <attr name="xBackgroundToColor" format="color" />
+        <attr name="xSliderFromColor" format="color" />
+        <attr name="xSliderToColor" format="color" />
+        <attr name="xLeftIcon" format="reference" />
+        <attr name="xRightIcon" format="reference" />
+        <attr name="xChangedTime" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="NumberPicker">
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="float|dimension" />
+        <attr name="startNumber" format="integer" />
+        <attr name="endNumber" format="integer" />
+        <attr name="currentNumber" format="integer" />
+        <attr name="verticalSpacing" format="dimension" />
+        <attr name="flagText" format="string|reference" />
+        <attr name="flagTextSize" format="dimension" />
+        <attr name="flagTextColor" format="color" />
+        <attr name="backgroundColor" format="color" />
+        <attr name="rowNumber" format="integer" />
+    </declare-styleable>
+
+
+    <declare-styleable name="tab_view_item">
+        <attr name="tab_view_item_content" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="bpMeasureTime">
+        <attr name="bmt_FirstText" format="string"/>
+        <attr name="bmt_SecondText" format="string"/>
+        <attr name="bmt_FirstTextSize" format="dimension"/>
+        <attr name="bmt_SecondTextSize" format="dimension"/>
+        <attr name="bmt_SelectStatus" format="enum">
+            <enum name="first" value="1" />
+            <enum name="second" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="BpWaveView">
+        <attr name="bwv_borderWidth" format="dimension"/>
+        <attr name="bwv_borderColor" format="color"/>
+        <attr name="bwv_progressValue" format="integer"/>
+        <attr name="bwv_shapeType" format="enum">
+            <enum name="triangle" value="0" />
+            <enum name="circle" value="1" />
+            <enum name="square" value="2" />
+            <enum name="rectangle" value="3" />
+        </attr>
+        <attr name="bwv_triangle_direction" format="enum">
+            <enum name="north" value="0" />
+            <enum name="south" value="1" />
+            <enum name="east" value="2" />
+            <enum name="west" value="3" />
+        </attr>
+        <attr name="bwv_round_rectangle" format="boolean"/>
+        <attr name="bwv_round_rectangle_x_and_y" format="integer"/>
+        <attr name="bwv_waveColor" format="color"/>
+        <attr name="bwv_wave_background_Color" format="color"/>
+        <attr name="bwv_waveAmplitude" format="float"/>
+        <attr name="bwv_titleTop" format="string"/>
+        <attr name="bwv_titleCenter" format="string"/>
+        <attr name="bwv_titleBottom" format="string"/>
+        <attr name="bwv_titleTopSize" format="dimension"/>
+        <attr name="bwv_titleCenterSize" format="dimension"/>
+        <attr name="bwv_titleBottomSize" format="dimension"/>
+        <attr name="bwv_titleTopColor" format="color"/>
+        <attr name="bwv_titleCenterColor" format="color"/>
+        <attr name="bwv_titleBottomColor" format="color"/>
+        <attr name="bwv_titleTopStrokeColor" format="color"/>
+        <attr name="bwv_titleTopStrokeWidth" format="dimension"/>
+        <attr name="bwv_titleBottomStrokeColor" format="color"/>
+        <attr name="bwv_titleBottomStrokeWidth" format="dimension"/>
+        <attr name="bwv_titleCenterStrokeColor" format="color"/>
+        <attr name="bwv_titleCenterStrokeWidth" format="dimension"/>
+    </declare-styleable>
+
+
+    <attr name="cbd_calendar_row" format="integer"/>
+
+    <declare-styleable name="CalendarDateView">
+        <attr name="cbd_calendar_row"/>
+    </declare-styleable>
+
+</resources>

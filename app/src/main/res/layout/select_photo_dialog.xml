@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:theme="@style/select_dialog">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:id="@+id/user_takephoto"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/google_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/from_take_icon"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/standard_font"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <LinearLayout
+        android:id="@+id/user_storageimage"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/google_white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/from_local_icon"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/standard_font"/>
+    </LinearLayout>
+</LinearLayout>

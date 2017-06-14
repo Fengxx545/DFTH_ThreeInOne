@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <com.dftaihua.dfth_threeinone.widget.BpWaveView
+        android:id="@+id/view_bp_measure_bwv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:bwv_borderColor="@color/colorAccent"
+        app:bwv_borderWidth="0dp"
+        app:bwv_progressValue="0"
+        app:bwv_round_rectangle="true"
+        app:bwv_shapeType="square"
+        app:bwv_titleCenterColor="@color/colorPrimary"
+        app:bwv_titleCenterSize="24sp"
+        app:bwv_triangle_direction="south"
+        app:bwv_waveAmplitude="70"
+        app:bwv_waveColor="@color/bp_measure_wave_main" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/view_bp_measure_value_ll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/view_bp_measure_value_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- - -"
+                android:textColor="@android:color/white"
+                android:textSize="60sp" />
+
+            <TextView
+                android:id="@+id/view_bp_measure_value_unit_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="mmHg"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/view_bp_measure_result_rl"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom">
+
+            <TextView
+                android:id="@+id/view_bp_measure_result_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="偏低"
+                android:textColor="@android:color/white"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/view_bp_measure_high_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_bp_measure_result_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="舒张压 : ---mmHg"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/view_bp_measure_low_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/view_bp_measure_high_tv"
+                android:layout_below="@+id/view_bp_measure_high_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="收缩压 : ---mmHg"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/view_bp_measure_rate_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/view_bp_measure_low_tv"
+                android:layout_below="@+id/view_bp_measure_low_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp"
+                android:text="心率 : ---bpm"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|top"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/view_bp_measure_control_btn"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape_circular"
+                android:text="开始"
+                android:textColor="@color/bp_measure_text"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

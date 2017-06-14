@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:item="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/setting_voice_switch_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="@color/bp_result_dialog_line_color"
+        android:visibility="gone" />
+
+    <com.dftaihua.dfth_threeinone.widget.CheckedItemView
+        android:id="@+id/setting_voice_switch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/check_item_height"
+        android:visibility="gone"
+        item:checked_content_pg="@drawable/setting_default"
+        item:checked_icon_visible="false"
+        item:checked_name="@string/setting_bp_voice_switch" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/bp_result_dialog_line_color" />
+
+    <com.dftaihua.dfth_threeinone.widget.CheckedItemView
+        android:id="@+id/setting_bp_unit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/check_item_height"
+        item:checked_content_text="@string/setting_mmHg"
+        item:checked_icon_visible="false"
+        item:checked_name="@string/setting_bp_unit_switch" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/bp_result_dialog_line_color" />
+
+    <com.dftaihua.dfth_threeinone.widget.CheckedItemView
+        android:id="@+id/setting_wifi_upload"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/check_item_height"
+        item:checked_content_pg="@drawable/setting_default"
+        item:checked_icon_visible="false"
+        item:checked_name="@string/setting_wifi_upload"
+        item:last_icon="@android:color/white"
+        item:last_icon_text="@string/setting_on" />
+
+    <com.dftaihua.dfth_threeinone.widget.CheckedItemView
+        android:id="@+id/setting_help"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/check_item_height"
+        android:layout_marginTop="20dp"
+        item:checked_icon_visible="false"
+        item:checked_name="@string/setting_help" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/bp_result_dialog_line_color" />
+
+    <com.dftaihua.dfth_threeinone.widget.CheckedItemView
+        android:id="@+id/setting_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/check_item_height"
+        item:checked_icon_visible="false"
+        item:checked_name="@string/setting_about_us" />
+
+    <com.dftaihua.dfth_threeinone.widget.CheckedItemView
+        android:id="@+id/setting_clear_data"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/check_item_height"
+        android:layout_marginTop="20dp"
+        item:checked_clear_visible="true"
+        item:checked_icon_visible="false"
+        item:checked_name="@string/setting_clear_data"
+        item:clear_text="@string/setting_500M"
+        item:clear_text_color="@color/google_white" />
+
+    <TextView
+        android:id="@+id/setting_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/setting_version"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+</LinearLayout>

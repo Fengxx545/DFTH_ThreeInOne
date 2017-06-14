@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:selfItem="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/activity_member_info_rl"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/member_info_back">
+
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/member_info_head_edit" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:text="张三"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/user_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:text="18888888888"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="#768EB4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/user_sex"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:text="男"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:text="|"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/user_height"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:text="175cm"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:text="|"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/user_weight"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:text="56kg"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:text="|"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/user_age"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:scaleType="fitXY"
+                android:text="30岁"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<com.dftaihua.dfth_threeinone.widget.CheckedItemView
+                android:layout_marginBottom="10dp"
+                android:id="@+id/activity_member_info_my_service_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/check_item_height"
+                selfItem:checked_icon="@drawable/member_item_my_service"
+                selfItem:checked_name="@string/self_account" />-->
+
+            <!--<com.dftaihua.dfth_threeinone.widget.CheckedItemView
+                android:layout_marginBottom="10dp"
+                android:id="@+id/activity_member_info_consume_record_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/check_item_height"
+                selfItem:checked_icon="@drawable/ic_launcher"
+                selfItem:checked_name="@string/medical_history" />-->
+
+            <com.dftaihua.dfth_threeinone.widget.CheckedItemView
+                android:id="@+id/activity_member_info_emergency_contact_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/check_item_height"
+                android:layout_marginBottom="10dp"
+                selfItem:checked_icon="@drawable/ic_launcher"
+                selfItem:checked_name="@string/medical_history" />
+
+            <com.dftaihua.dfth_threeinone.widget.CheckedItemView
+                android:id="@+id/activity_member_info_life_habit_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/check_item_height"
+                android:layout_marginBottom="10dp"
+                selfItem:checked_icon="@drawable/ic_launcher"
+                selfItem:checked_name="@string/medical_history" />
+
+            <com.dftaihua.dfth_threeinone.widget.CheckedItemView
+                android:id="@+id/activity_member_info_disease_history_item"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/check_item_height"
+                selfItem:checked_icon="@drawable/ic_launcher"
+                selfItem:checked_name="@string/medical_history" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

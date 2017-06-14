@@ -1,0 +1,134 @@
+apply plugin: 'com.android.application'
+
+def getVersionName(def versionName){
+    if(!APP_VERSION.isEmpty()){
+        APP_VERSION
+    }else {
+        versionName
+    }
+}
+int getVersionCode(def versionCode){
+    if(!APP_CODE.isEmpty()){
+        APP_CODE.toInteger()
+    }else {
+        versionCode
+    }
+}
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+    packagingOptions{
+        exclude 'AndroidManifest.xml'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/ASL2.0'
+    }
+
+    defaultConfig {
+        multiDexEnabled true
+        applicationId "com.dftaihua.dfth_threeinone"
+        minSdkVersion 18
+        targetSdkVersion 23
+        versionCode getVersionCode(2)
+        versionName getVersionName("v1.0.1")
+        manifestPlaceholders = [
+                DFTH_XG_PUSH_ID  : '2100255697',
+                DFTH_XG_PUSH_KEY : 'A55C4BXM27LX'
+        ]
+    }
+
+    signingConfigs {
+        debug_sign {
+            storeFile file("../keystore.jks")
+            storePassword "dfth8587"
+            keyAlias "dfth"
+            keyPassword "dfth8587"
+        }
+
+        release_sign {
+            storeFile file("../keystore.jks")
+            storePassword "dfth8587"
+            keyAlias "dfth"
+            keyPassword "dfth8587"
+
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug_sign
+        }
+        release {
+            minifyEnabled false
+            debuggable false
+            jniDebuggable false
+            minifyEnabled false
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    productFlavors {
+        three_debug {
+            signingConfig signingConfigs.debug_sign
+            versionName getVersionName("0.1m")
+            versionCode getVersionCode(21)
+            buildConfigField("String","clientId",'"c1969a2c222c4dcfa2ce0e4b26416a84"')
+            buildConfigField("String","serectId",'"efc4d8d54e384f0ca41991dd9a2065d7"')
+            buildConfigField("String","baseUrl",'"http://apitest.open.dfthlong.com/"')
+            buildConfigField("boolean","log_enable","true")
+        }
+
+        three_release {
+            signingConfig signingConfigs.release_sign
+            versionName getVersionName("1.0.6")
+            versionCode getVersionCode(8)
+            buildConfigField("String","clientId",'"351d19993224435bb2d1e9182c9ed7ca"')
+            buildConfigField("String","serectId",'"b3337cd7b2dd4affbaa31c2c7651d1b2"')
+            buildConfigField("String","baseUrl",'"http://api.open.dfthlong.com/"')
+            buildConfigField("boolean","log_enable","false")
+        }
+    }
+
+
+
+
+    android.applicationVariants.all{ variant ->
+        variant.outputs.each { output ->
+            output.processManifest.doLast {
+                def manifestFile = output.processManifest.manifestOutputFile
+                def updatedContent = manifestFile.getText('UTF-8').replaceAll("dfth_package_name","com.dftaihua.dfth_threeinone")
+                manifestFile.write(updatedContent,'UTF-8')
+            }
+            def outputFile = output.outputFile
+            if(outputFile != null && outputFile.name.endsWith('.apk')) {
+                def fileName = variant.mergedFlavor.applicationId + "_" +variant.mergedFlavor.versionName + "_" + variant.mergedFlavor.versionCode + ".apk"
+                println "dfth_sdk-->$fileName"
+                output.outputFile = new File(outputFile.parent,fileName)
+            }
+        }
+    }
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+    compileOptions {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.dfth.push:push:1.0.0.028'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.dfth:device_sdk:1.0.2.089'
+    compile 'com.jcodecraeer:xrecyclerview:zry_1.0.1'
+    compile 'com.dfth.update:update:1.0.0.003'
+    compile 'com.dfth.pay:pay:1.0.0.63'
+    compile 'com.android.support:multidex:1.0.1'
+    compile files('libs/library.jar')
+}

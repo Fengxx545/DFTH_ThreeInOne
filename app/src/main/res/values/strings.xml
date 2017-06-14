@@ -1,0 +1,418 @@
+<resources>
+    <string name="app_name">健康心管家</string>
+    <string name="app_version">m</string>
+
+    <string name="empty"> </string>
+    <string name="small_housekeeper">安心小管家</string>
+    <string name="single_ecg">单道心电</string>
+
+    <string name="self_account">个人账户</string>
+    <string name="medical_history">病史记录</string>
+    <string name="setting_info">设置个人信息</string>
+
+    <!-- 标题 start-->
+    <string name="title_activity_home">首页</string>
+    <string name="title_activity_self_info">个人中心</string>
+    <string name="title_activity_setting">系统设置</string>
+    <string name="title_activity_my_relative">我的亲友</string>
+    <string name="title_activity_my_service">我的服务</string>
+    <string name="title_activity_service_record">服务记录</string>
+    <string name="title_activity_single_ecg_history">单道心电</string>
+    <string name="title_activity_twelve_ecg_history">12导心电</string>
+    <string name="title_activity_detail">心电详情</string>
+    <string name="title_activity_result">测量结果</string>
+    <string name="title_activity_modify_info">修改资料</string>
+    <string name="title_activity_bp_measure">血压测量</string>
+    <string name="title_activity_bp_measure_pre">血压</string>
+    <string name="title_activity_bp_result_1">动态计划</string>
+    <string name="title_activity_bp_result_2">血压历史</string>
+    <string name="title_activity_complete_selfinfo">个人资料设定</string>
+    <string name="title_activity_amb_chart">血压趋势图</string>
+    <string name="title_activity_about_us">关于我们</string>
+    <!-- 标题 end-->
+
+    <!--toast提示-->
+    <string name="press_once_back">再按一次,即可退出</string>
+    <string name="prevent_quit_toast">正在测量中,不能退出</string>
+    <string name="quit_toast">再按一次，即可退出</string>
+    <string name="login_error">登录失败，用户名或密码错误!</string>
+    <string name="no_data">没有数据</string>
+    <string name="measuring_cant_edit">心电正在测量不能编辑</string>
+    <string name="select_before_today">请选择今天之前的时间</string>
+    <string name="have_bp_device">已存在血压设备！</string>
+    <string name="have_single_device">已存在单道心电设备！</string>
+    <string name="stop_single_long_measure">测量时间不足24小时，停止测量会终止本次长程计划，是否停止测量？</string>
+    <string name="have_twelve_device">已存在12导设备！</string>
+    <string name="exist_bp_measuring">血压设备正在测量中，请结束测量后再尝试连接其他设备</string>
+    <string name="exist_single_measuring">单道心电正在测量中，请结束测量后再尝试连接其他设备</string>
+    <string name="exist_ecg_measuring">12导心电正在测量中，请结束测量后再尝试连接其他设备</string>
+    <string name="network_not_connect">网络未连接!</string>
+
+    <!-- slide menu start-->
+    <string name="slide_menu_my_device">我的设备</string>
+    <string name="slide_menu_has_no_device">暂无设备</string>
+    <string name="slide_menu_home_doctor">家庭医生</string>
+    <string name="slide_menu_add_home_doctor">敬请期待</string>
+    <string name="slide_menu_member_info">个人中心</string>
+    <string name="slide_menu_my_family">我的亲友</string>
+    <string name="slide_menu_my_service">我的服务</string>
+    <string name="slide_menu_service_record">服务记录</string>
+    <string name="slide_menu_setting">系统设置</string>
+    <string name="slide_menu_logout">退出登录</string>
+    <string name="slide_menu_bp_measuring">需停止血压测量后才能退出登录!</string>
+    <string name="slide_menu_single_measuring">需停止单道心电测量后才能退出登录!</string>
+    <string name="slide_menu_ecg_measuring">需停止12导心电测量后才能退出登录!</string>
+    <string name="slide_menu_device_single_ecg">单道心电</string>
+    <string name="slide_menu_device_twelve_ecg">12导心电</string>
+    <string name="slide_menu_device_blood">血压</string>
+    <string name="slide_menu_is_logout">是否确定退出登录？</string>
+    <string name="slide_menu_logout_need_stop_plan">需先停止动态计划再退出登录!</string>
+    <!-- slide menu end-->
+
+    <!-- 单道心电历史页面 -->
+    <string name="single_ecg_btn_measure">手动测量</string>
+    <string name="twelve_ecg_btn_measure">手动测量</string>
+    <string name="single_ecg_text_history">测量历史</string>
+    <string name="single_ecg_text_calender">日历</string>
+    <string name="single_ecg_select_date_no_data">选择日期没有数据!</string>
+    <string name="single_ecg_download_data_fail">下载心电文件失败!</string>
+    <string name="single_ecg_no_file">心电文件缺失!</string>
+    <string name="single_ecg_text_edit">编辑</string>
+    <string name="single_ecg_text_edit_cancel">取消编辑</string>
+    <string name="single_ecg_text_measure">测量</string>
+    <string name="single_ecg_text_disconnect">已断开</string>
+    <string name="bluetooth_connect">已连接</string>
+    <string name="bluetooth_disconnect">已断开</string>
+    <string name="friend_measure_text">体验测量</string>
+    <string name="long_time_measure_text">长程测量</string>
+    <string name="select_all_text">全选</string>
+    <string name="delete_text">删除</string>
+    <string name="no_data_text">没有测量历史</string>
+    <string name="no_data_text_tip">点击底部测量按钮开始测量</string>
+    <string name="symptoms">出现症状</string>
+    <string name="bp_measuring">血压正在测量,请先结束测量</string>
+    <string name="twelve_ecg_measuring">12导正在测量,请先结束测量</string>
+    <string name="single_ecg_measuring">单道正在测量,请先结束测量</string>
+
+    <!--出现症状-->
+    <string name="your_body_disease">您的身体症状</string>
+    <string name="your_body_disease_tips">重要提示：您的临床身体症状结合心电图对预防心梗非常重要，请您务必填写。</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+
+
+    <!-- 主页任务卡 start-->
+    <string name="activity_home_helper">安心小助手</string>
+    <string name="activity_home_helper_first_see_you">亲！初次见面，我是您的安心小助手。目前您还没有绑定任何测量设备，是否要现在绑定呢？</string>
+    <string name="activity_home_helper_has_bind_device">我是安心小助手，可以为您提供各种服务帮助哦，有需要就来找我吧!</string>
+    <string name="activity_home_helper_has_counsel">您正在进行服务平台咨询</string>
+    <string name="activity_home_helper_has_message">您有新的医生消息回复</string>
+    <string name="activity_home_helper_search_device">搜索可用设备</string>
+    <string name="activity_home_helper_bind_device_success">绑定设备成功！</string>
+    <string name="activity_home_device_blood">血压</string>
+    <string name="activity_home_device_single_ecg">单道心电</string>
+    <string name="activity_home_device_twelve_ecg">12导心电</string>
+    <string name="activity_home_device_printer">打印机</string>
+    <string name="activity_home_measure_now">现在去测量</string>
+    <string name="activity_home_blood_pressure_high_mmHg">高压(mmHg)</string>
+    <string name="activity_home_blood_pressure_low_mmHg">低压(mmHg)</string>
+    <string name="activity_home_blood_pressure_high_kPa">高压(kPa)</string>
+    <string name="activity_home_blood_pressure_low_kPa">低压(kPa)</string>
+    <string name="activity_home_blood_pulse_rate">脉率(bpm)</string>
+    <string name="activity_home_blood_plan">距下次自动测量还有:</string>
+    <string name="activity_home_blood_value_zero">— —</string>
+    <string name="activity_home_blood_next_measure_time_interval">距下次自动测量：</string>
+    <string name="activity_home_blood_next_measure_time">00:00:21</string>
+    <string name="activity_home_ecg_aver_rate">平均心率(bpm)</string>
+    <string name="activity_home_ecg_pvc">室性早搏(次)</string>
+    <string name="activity_home_ecg_sves">室上性早搏(次)</string>
+    <string name="activity_home_ecg_analysis">医师分析</string>
+    <string name="activity_home_to_measure_now">现在去测量</string>
+    <string name="activity_home_default_time">2016.06.01 14:02:03</string>
+    <!-- 主页任务卡 end-->
+
+
+    <!--登录注册完善信息 start-->
+    <string name="tel_is_null">手机号不能为空</string>
+    <string name="password_is_null">密码不能为空</string>
+    <string name="username_is_null">用户名不能为空</string>
+    <string name="password_is_error">密码格式错误，请输入6—15位数字或字母</string>
+    <string name="username_is_error">姓名只能输入20个字符以内的中文、英文、数字</string>
+    <string name="tel_is_invalid">手机号不合法</string>
+    <string name="code_is_null">验证码不能为空</string>
+    <string name="code_is_invalid">验证码不合法</string>
+    <string name="register_time_count">秒后重新获取</string>
+    <string name="registering">正在注册...</string>
+    <string name="change_password_ing">正在修改密码...</string>
+    <string name="change_password_ok">密码修改成功</string>
+    <string name="connect_service_fail">连接服务器失败</string>
+
+    <!-- 个人中心 start-->
+    <string name="member_info_item_my_service">我的服务</string>
+    <string name="member_info_item_consume_record">消费记录</string>
+    <string name="member_info_item_emergency_contact">紧急联系人</string>
+    <string name="member_info_item_life_habit">生活习惯</string>
+    <string name="member_info_item_disease_history">病史记录</string>
+    <string name="member_info_item_not_add">未添加</string>
+    <string name="member_info_item_not_set">未设置</string>
+    <!-- 个人中心  end-->
+    <!-- 修改资料 start-->
+    <string name="member_info_modify_item_head">修改头像</string>
+    <string name="member_info_modify_item_name">姓名</string>
+    <string name="member_info_modify_item_gender">性别</string>
+    <string name="member_info_modify_item_birth">出生日期</string>
+    <string name="member_info_modify_item_height">身高</string>
+    <string name="member_info_modify_item_weight">体重</string>
+    <string name="member_info_modify_success">修改资料成功!</string>
+    <!-- 修改资料  end-->
+    <!--登录注册完善信息 start-->
+    <string name="code_re_get">重新获取</string>
+    <string name="input_phone">输入手机号码</string>
+    <string name="input_password">输入密码</string>
+    <string name="input_sms">输入验证码</string>
+    <string name="get_code">获取验证码</string>
+    <string name="login">登录</string>
+    <string name="login_ing">登录中...</string>
+    <string name="login_connect_server_fail">服务器连接失败!</string>
+    <string name="forget_password">忘记密码?</string>
+    <string name="register">快速注册</string>
+    <string name="next">下一步</string>
+    <string name="complete">完成</string>
+    <string name="birthday">出生\n日期</string>
+    <string name="default_weight">体重\n70\nkg</string>
+    <string name="default_height">身高\n170\ncm</string>
+    <string name="phone_not_input">还未输入手机号码</string>
+    <string name="self_info_tip">根据您的资料,为您定制更专业的服务</string>
+    <string name="old_user_login">老心仪用户首次使用请点击\"忘记密码\",重新设置密码</string>
+    <!--登录注册完善信息 end-->
+
+    <!--系统设置界面 start-->
+    <string name="setting_bp_voice_switch">血压计语音开关</string>
+    <string name="setting_bp_unit_switch">切换血压数据单位</string>
+    <string name="setting_wifi_upload">仅在WiFi下上传数据</string>
+    <string name="setting_help">使用帮助</string>
+    <string name="setting_about_us">关于我们</string>
+    <string name="setting_mmHg">mmHg</string>
+    <string name="setting_kPa">kPa</string>
+    <string name="setting_on">ON</string>
+    <string name="setting_500M">500M</string>
+    <string name="setting_0KB">0KB</string>
+    <string name="setting_clear_data">清除缓存</string>
+    <string name="setting_version">当前版本&#160;:&#160;</string>
+    <string name="setting_connect_device_first">请先连接血压设备！</string>
+    <string name="setting_no_bp_device">获取不到血压设备！</string>
+    <string name="setting_clear_data_dialog">确认清除心电图缓存吗？\n(不会删除平台咨询历史及已收到的心电图报告)</string>
+    <string name="setting_clear_data_success">清除缓存成功！</string>
+    <string name="setting_clear_data_fail">清除缓存失败！</string>
+    <!--系统设置界面 end-->
+
+    <!--心电历史详情-->
+    <string name="avg_rate">平均心率: <xliff-g id="1">%1$1s</xliff-g></string>
+    <string name="beat_count">心搏总数: <xliff-g id="1">%1$1s</xliff-g></string>
+    <string name="count"><xliff-g id="1">%1$1s</xliff-g>次</string>
+    <string name="bpm"><xliff-g id="1">%1$1s</xliff-g>bpm</string>
+    <string name="BPM"><xliff-g id="1">%1$1s</xliff-g>&#160;BPM</string>
+    <string name="a_result">分析报告</string>
+    <string name="a_data">心电数据</string>
+    <string name="a_doctor">医师分析</string>
+    <string name="ecg_max_hr">最高心率</string>
+    <string name="ecg_min_hr">最低心率</string>
+    <string name="ecg_pvc">室性早搏</string>
+    <string name="ecg_sp">室上性早搏</string>
+    <string name="sport_peaceful">平静状态</string>
+    <string name="sport_slow_ful">缓慢运动</string>
+    <string name="sport_fast_ful">剧烈运动</string>
+    <string name="choose_leader">导联</string>
+    <string name="bpm_unit"> bpm</string>
+    <string name="upload_complete">已上传</string>
+    <string name="upload_wait">等待中</string>
+    <string name="uploading">正在上传%d</string>
+    <string name="upload_no">未上传</string>
+    <string name="history_doctor_no_service_1">您尚未开通&#160;&#160;\"平台医师分析服务\"</string>
+    <string name="history_doctor_no_service_2">可在&#160;【个人中心】&#160;>&#160;【我的服务】&#160;中查询详情</string>
+    <string name="history_doctor_get_service">领取服务</string>
+    <string name="get_report">点击获取</string>
+    <string name="get_report_fail_tip">医师分析获取失败，请手动获取</string>
+    <string name="get_report_service_close_tip1">服务关闭时测量的数据。</string>
+    <string name="get_report_service_close_tip2">若需医师分析，请确保服务开启再手动获取！</string>
+    <string name="get_report_service_close_tip3">您尚未开通“平台医师分析服务”</string>
+    <string name="get_report_service_close_tip4">可点击领取</string>
+    <string name="get_report_service_close_tip5">您尚未开通“平台医师分析服务”,可点击领取</string>
+    <string name="get_report_service_close_tip6">服务关闭时测量的数据。若需医师分析，请确保服务开启再手动获取！</string>
+    <string name="get_report_success">获取成功</string>
+
+    <!--血压测量start-->
+    <string name="bp_measure_last_result">上一次测量结果</string>
+    <string name="bp_measure_plan">动态血压计划</string>
+    <string name="bp_measure_normal_measuring">手动测量中...</string>
+    <string name="bp_measure_experience_measuring">体验测量中...</string>
+    <string name="bp_measure_plan_measuring">自动测量中...</string>
+    <string name="bp_measure_experience">体验测量</string>
+    <string name="bp_measure_normal">手动测量</string>
+    <!--血压测量 end-->
+
+    <!--血压结果 start-->
+    <string name="bp_result_time_text_line">时间</string>
+    <string name="bp_result_ssy_text_line">高压</string>
+    <string name="bp_result_szy_text_line">低压</string>
+    <string name="bp_result_beat_text_line">脉率</string>
+    <string name="bp_result_reach_text_line">达标</string>
+    <string name="bp_result">测量结果&#160;:&#160;</string>
+    <string name="bp_result_normal">正常</string>
+    <string name="bp_result_high">偏高</string>
+    <string name="bp_result_higher">很高</string>
+    <string name="bp_result_highest">极高</string>
+    <string name="bp_result_low">偏低</string>
+    <string name="bp_result_lower">很低</string>
+    <string name="bp_result_invalid">请稍后重新测量</string>
+    <string name="bp_result_unit_mmHg">(mmHg)</string>
+    <string name="bp_result_unit_kPa">(kPa)</string>
+    <!--血压结果 end-->
+
+    <!--血压趋势图 start-->
+    <string name="bp_result_chart_no_ambp_result">没有动态计划数据!</string>
+    <string name="bp_result_chart_no_before_result">当前日期往前没有心电数据!</string>
+    <string name="bp_result_chart_no_after_result">当前日期往后没有心电数据!</string>
+    <!--血压趋势图 end-->
+
+    <!--bp plan dialog start-->
+    <string name="bp_plan_exist_phone">当前APP所执行的动态计划与要连接的血压仪不匹配，确定要关闭正在执行中的测量计划吗？</string>
+    <string name="bp_plan_exist_device">检索到的血压仪中已存在动态测量计划，确定要关闭正在执行的测量计划吗？</string>
+    <string name="bp_plan_not_same">手机与设备计划不一致，确定清除原有计划并连接？</string>
+    <string name="bp_plan_cancel_success">已取消执行中的动态计划，可下达新测量计划!</string>
+    <string name="bp_plan_cancel_fail">取消执行中的动态计划失败!</string>
+    <string name="bp_plan_cancel_dialog">确定取消计划吗？</string>
+    <!--bp plan dialog end-->
+
+    <string name="ecg_rate">走速：25mm/s</string>
+    <string name="ecg_gain">增益：10mm/mv</string>
+
+
+    <!--dialog & tip-->
+    <string name="long_time_tip">长程测量可持续为您监测24小时的心电图变化,测量前请确认您的设备及手机电量充足。测量过程中尽量保证设备不脱离身体。</string>
+    <string name="bp_experience_measure_tip">该功能仅用于亲友或他人进行产品体验，不含平台服务，且测量数据不会记入您的个人记录。</string>
+    <string name="upload_text">正在上传数据…</string>
+    <string name="upload_text_tip">温馨提示:正在上传数据,请勿退出</string>
+    <string name="connect_bluetooth">正在连接蓝牙…</string>
+
+    <!--修改资料 start-->
+    <string name="member_info_modify_head">修改头像</string>
+    <string name="member_info_modify_name">姓名</string>
+    <string name="member_info_modify_gender">性别</string>
+    <string name="member_info_modify_birth">出生日期</string>
+    <string name="member_info_modify_height">身高</string>
+    <string name="member_info_modify_weight">体重</string>
+    <string name="member_info_gender_man">男</string>
+    <string name="member_info_gender_woman">女</string>
+    <string name="member_info_birth_age">岁</string>
+    <string name="member_info_weight_kg">kg</string>
+    <string name="member_info_height_cm">cm</string>
+    <string name="member_info_birth_not_over_now">出生日期不能大于当前日期</string>
+    <!--修改资料 end-->
+
+    <!--紧急联系人 start-->
+    <string name="member_info_contact_phone">紧急联系人电话</string>
+    <string name="member_info_contact_name">紧急联系人</string>
+    <string name="member_info_contact_name_not_null">紧急联系人不能为空!</string>
+    <string name="member_info_contact_phone_not_null">紧急联系人电话不能为空!</string>
+    <string name="member_info_contact_mark_1">设置紧急联系人有助于</string>
+    <string name="member_info_contact_mark_2">我们在紧急情况下提供及时的救助</string>
+    <string name="member_info_contact_modify_success">紧急联系人修改成功!</string>
+    <!--紧急联系人 end-->
+
+    <!--device dialog start-->
+    <string name="dialog_device_status">设备状态</string>
+    <string name="dialog_device_status_connect">已连接</string>
+    <string name="dialog_device_status_not_connect">未连接</string>
+    <string name="dialog_device_model">产品型号</string>
+    <string name="dialog_device_model_bp">TKBP_H01</string>
+    <string name="dialog_device_model_single">TKECG_H01</string>
+    <string name="dialog_device_model_ecg">TKECG</string>
+    <string name="dialog_device_version">版本信息</string>
+    <string name="dialog_device_version_default">V1.1.5</string>
+    <string name="dialog_device_mac">产品MAC地址</string>
+    <string name="dialog_device_mac_default">00:0E:0E:B8:66</string>
+    <!--device dialog end-->
+
+    <!--bp plan view start-->
+    <string name="bp_plan_view_stop_plan">停止动态计划</string>
+    <string name="bp_plan_view_begin_time">制定计划时间&#160;:&#160;</string>
+    <string name="bp_plan_view_start_plan">执行动态计划</string>
+    <!--bp plan view end-->
+
+    <!--bp measure pre start-->
+    <string name="bp_measure_pre_connect_device_to_set_plan">需要连接设备才能下发计划!</string>
+    <string name="bp_measure_pre_connect_device_to_stop_plan">需要连接设备才能停止计划!</string>
+    <string name="bp_measure_pre_stop_measure_to_set_plan">请停止测量后再下发计划!</string>
+    <string name="bp_measure_pre_stop_measure_to_stop_plan">请停止测量后再停止计划!</string>
+    <string name="bp_measure_pre_set_plan_success">下发测量计划成功!</string>
+    <string name="bp_measure_pre_set_plan_fail">下发测量计划失败!</string>
+    <string name="bp_measure_pre_stop_plan_success">停止动态计划成功!</string>
+    <string name="bp_measure_pre_stop_plan_fail">停止动态计划失败!</string>
+    <!--bp measure pre end-->
+
+    <!--bp measure view start-->
+    <string name="bp_measure_view_start">开始</string>
+    <string name="bp_measure_view_stop">停止</string>
+    <string name="bp_measure_device_connect_fail">连接设备失败！请重新连接</string>
+    <string name="bp_measure_plan_will_execute">动态计划测量即将开始,手动测量已锁定！</string>
+    <string name="bp_measure_stop_fail">结束测量失败!</string>
+    <string name="bp_measure_view_high_default">高&#160;压&#160;:&#160;---</string>
+    <string name="bp_measure_view_low_default">低&#160;压&#160;:&#160;---</string>
+    <string name="bp_measure_view_rate_default">脉&#160;率&#160;:&#160;---</string>
+    <string name="bp_measure_view_high">高&#160;压&#160;:&#160;</string>
+    <string name="bp_measure_view_low">低&#160;压&#160;:&#160;</string>
+    <string name="bp_measure_view_rate">脉&#160;率&#160;:&#160;</string>
+    <!--bp measure view end-->
+
+    <!--device popup start-->
+    <string name="device_popup_bp">血压</string>
+    <string name="device_popup_tkbp">动态血压</string>
+    <string name="device_popup_single_ecg">单道心电</string>
+    <string name="device_popup_twelve_ecg">12导心电</string>
+    <string name="device_popup_bp_measuring">血压测量中！</string>
+    <string name="device_popup_single_measuring">单道心电测量中！</string>
+    <string name="device_popup_ecg_measuring">12导心电测量中！</string>
+    <!--device popup end-->
+
+    <!--home base activity start-->
+    <string name="update_failed">更新失败！</string>
+    <string name="loading_data">正在获取数据...</string>
+    <!--home base activity end-->
+
+    <!--free activity start-->
+    <string name="free_service_getting">正在领取服务中...</string>
+    <string name="free_service_get_success">领取成功!</string>
+    <string name="free_service_get_failed">领取失败!</string>
+    <string name="free_service_get">领取服务</string>
+    <string name="free_service_get_success_des">已为您开通免费服务</string>
+    <string name="free_service_deadline">免费服务期截止至2018年9月1日，您可在“个人中心”——“我的服务”中查看到服务状态</string>
+    <string name="free_service_not_have">暂无免费服务!</string>
+    <!--free activity end-->
+
+    <string name="tips">温馨提示</string>
+    <string name="calc_ecg_end">正在生成分析报告</string>
+    <string name="ecg_leader_out">导联脱落</string>
+    <string name="confirm_stop">测量时间不足<xliff-g id="1">%1$1s</xliff-g>秒，无法进行医师分析！您是否确定结束测量？</string>
+    <string name="guide_button_experience">马上体验</string>
+    <string name="wait_doctor_result">等待医师分析</string>
+    <string name="device_connect_success">设备连接成功!</string>
+
+
+    <string name="normal_heart_beat">N</string>
+    <string name="ventricular_heart_beat">V</string>
+    <string name="atrial_heart_beat">S</string>
+    <string name="disturb_heart_beat">X</string>
+    <string name="stop_measure_clean">请停止测量后再清除缓存!</string>]
+
+
+    <string name="measure_device_choose_single_ecg">单道心电</string>
+    <string name="measure_device_choose_ecg">十二导心电</string>
+    <string name="measure_device_choose_bp">动态血压</string>
+    <string name="no_plan_data">没有动态计划数据!</string>
+
+    <string name="from_local_icon">从相册选择</string>
+    <string name="from_take_icon">拍照上传</string>
+    <string name="storage_permission_tip">存储空间权限没有打开，请在\"系统设置\"或授权对话框中允许\"存储空间\"权限</string>
+
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:gravity="center"
+              android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:id="@+id/read_config"
+        android:layout_gravity="center"
+        android:background="@color/google_green"
+        android:textColor="@color/google_white"
+        android:text="读取配置文件"
+        android:layout_marginBottom="20dp"
+        android:layout_height="40dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:id="@+id/get_bp_plan"
+        android:layout_gravity="center"
+        android:background="@color/google_green"
+        android:textColor="@color/google_white"
+        android:text="读取血压设备测量计划"
+        android:layout_marginBottom="20dp"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:id="@+id/set_bp_plan"
+        android:layout_gravity="center"
+        android:background="@color/google_green"
+        android:textColor="@color/google_white"
+        android:text="模拟血压计划"
+        android:layout_marginBottom="20dp"
+        android:layout_height="40dp"/>
+
+</LinearLayout>

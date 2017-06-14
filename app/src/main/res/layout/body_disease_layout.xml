@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_dialog_disease">
+
+    <TextView
+        android:id="@+id/body_d_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/your_body_disease"
+        android:textColor="@color/google_black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/body_d_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/body_d_title"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/your_body_disease_tips"
+        android:textColor="@color/google_black"
+        android:textSize="@dimen/standard_font" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/body_d_tips"
+        android:background="@color/twelve_color" />
+
+    <LinearLayout
+        android:id="@+id/dialog_select_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/body_d_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_dialog_disease_button_right"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/cancel"
+            android:textColor="@color/google_white"
+            android:textSize="@dimen/standard_font" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/body_d_tips"
+            android:background="@color/google_white" />
+
+        <TextView
+            android:id="@+id/body_d_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/shape_dialog_disease_button_left"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/confirm"
+            android:textColor="@color/google_white"
+            android:textSize="@dimen/standard_font" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/body_time_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/body_d_tips"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/body_time_radio_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/google_black"
+            android:textSize="@dimen/standard_font" />
+
+        <RadioButton
+            android:id="@+id/body_time_radio_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/google_black"
+            android:textSize="@dimen/standard_font" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/body_time_radio_group"
+        android:background="@color/twelve_color" />
+
+    <ListView
+        android:id="@+id/body_disease_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/dialog_select_bottom"
+        android:layout_below="@+id/body_time_radio_group"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5dp" />
+
+</RelativeLayout>

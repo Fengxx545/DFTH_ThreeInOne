@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/history_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/separated_bg"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/text_history"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="@string/single_ecg_text_history"
+            android:textColor="@color/standard_font_color"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/img_calender"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:src="@drawable/single_calendar" />
+
+            <TextView
+                android:id="@+id/text_calender"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:text="@string/single_ecg_text_calender"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/editting"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/calendar">
+
+            <ImageView
+                android:id="@+id/img_edit"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:src="@drawable/single_edit"/>
+
+            <TextView
+                android:id="@+id/text_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:text="@string/single_ecg_text_edit"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cancel_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="@string/single_ecg_text_edit_cancel"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/history_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_bottom_single_ecg"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/friend_measure_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/friends_measure" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/friend_measure_text"
+                android:textColor="@color/google_white" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/long_time_measure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/long_time_measure" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/long_time_measure_text"
+                android:textColor="@color/google_white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/start_measure"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/measure_start" />
+
+            <TextView
+                android:id="@+id/measure_start_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/single_ecg_btn_measure"
+                android:textColor="@color/google_white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/single_history_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/history_bottom"
+        android:layout_below="@id/history_title"
+        android:layout_marginTop="5dp">
+
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+    <LinearLayout
+        android:id="@+id/no_data_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/history_bottom"
+        android:layout_below="@id/history_title"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/slide_menu_has_no" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/no_data_text"
+            android:textColor="@color/bp_measure_no_result_text"
+            android:textSize="28dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/no_data_text_tip"
+            android:textColor="@color/bp_measure_no_result_text"
+            android:textSize="24dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/edit_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_bottom_single_ecg"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/select_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!--<ImageView-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:src="@drawable/friends_measure"-->
+            <!--android:layout_height="30dp"/>-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_all_text"
+                android:textColor="@color/google_white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/delete_history"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <!--<ImageView-->
+            <!--android:layout_width="30dp"-->
+            <!--android:src="@drawable/measure_start"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:layout_height="30dp"/>-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/delete_text"
+                android:textColor="@color/google_white" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/measure_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_bottom_single_ecg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/measure_bottom_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="手动测量中..."
+            android:textColor="@color/google_white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/measure_bottom_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="00:00:00"
+            android:textColor="@color/google_white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

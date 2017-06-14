@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/dialog_connect_search_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/dialog_connect_remind_tv"
+            android:layout_gravity="center_horizontal">
+
+            <com.dftaihua.dfth_threeinone.widget.ConnectAnimation
+                android:id="@+id/dialog_connect_animation"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:id="@+id/dialog_connect_help_iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/card_helper" />
+
+            <ImageView
+                android:id="@+id/dialog_connect_device_iv"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/card_helper"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dialog_connect_remind_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:text="连接中，请保持设备在附近..."
+            android:textColor="@color/google_white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/dialog_connect_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_connect_remind_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_connect_dialog_button"
+            android:paddingBottom="10dp"
+            android:paddingEnd="30dp"
+            android:paddingStart="30dp"
+            android:paddingTop="10dp"
+            android:text="取消"
+            android:textColor="@color/google_white"
+            android:textSize="@dimen/standard_button_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialog_connect_no_device_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/dialog_connect_no_device_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="未找到可用设备"
+            android:textColor="@color/google_white"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/dialog_connect_no_device_iv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/dialog_connect_no_device" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="1.请确保设备已经打开"
+            android:textColor="@color/google_white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="2.请确认手机蓝牙已经打开"
+            android:textColor="@color/google_white"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dialog_connect_no_device_reconnect_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_connect_dialog_button"
+                android:paddingBottom="10dp"
+                android:paddingEnd="30dp"
+                android:paddingStart="30dp"
+                android:paddingTop="10dp"
+                android:text="重新连接"
+                android:textColor="@color/google_white"
+                android:textSize="@dimen/standard_button_text" />
+
+            <Button
+                android:id="@+id/dialog_connect_no_device_cancel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_connect_dialog_button"
+                android:paddingBottom="10dp"
+                android:paddingEnd="30dp"
+                android:paddingStart="30dp"
+                android:paddingTop="10dp"
+                android:text="取消"
+                android:textColor="@color/google_white"
+                android:textSize="@dimen/standard_button_text" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

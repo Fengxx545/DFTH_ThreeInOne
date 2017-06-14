@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dftaihua.dfth_threeinone">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:name="com.dftaihua.dfth_threeinone.application.ThreeInOneApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_icon"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RegistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EcgHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ComplateSelfInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MemberInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MemberInfoItemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyRelativeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ServiceRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MemberInfoModifyActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activity.EcgMeasureActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".activity.EcgDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BpMeasureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BpMeasurePreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HelpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BpResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FreeServiceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".debug.DebugReadConfigActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".debug.DebugReadBpPlanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".debug.ChooseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AmbChartActivity"
+            android:screenOrientation="landscape" />
+
+        <service android:name=".service.TimeService" />
+
+        <receiver android:name=".broadcastreceiver.AlarmBroadcastReceiver" />
+
+        <receiver android:name="com.dftaihua.dfth_threeinone.manager.NotificationReceiver">
+            <intent-filter>
+                <action android:name="three_in_one_notification_action" />
+                <action android:name="three_in_one_push_notification_receiver" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.dftaihua.dfth_threeinone.manager.NetworkCheckReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".utils.RequestUtils"/>
+
+        <service android:name=".service.DfthKeepForegroundService"/>
+    </application>
+</manifest>

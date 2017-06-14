@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dip"
+        android:background="@color/member_info_modify_line" />
+
+    <RelativeLayout
+        android:id="@+id/member_info_modify_head_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/google_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="20dp"
+            android:text="@string/member_info_modify_head"
+            android:textColor="@color/member_info_modify_text"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/member_info_modify_head_iv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toStartOf="@+id/member_info_modify_go_1"
+            android:src="@drawable/member_info_head" />
+
+        <ImageView
+            android:id="@+id/member_info_modify_go_1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/arrow_go" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/member_info_modify_line" />
+
+    <RelativeLayout
+        android:id="@+id/member_info_modify_name_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/google_white">
+
+        <TextView
+            android:id="@+id/member_info_modify_name_des_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="20dp"
+            android:text="@string/member_info_modify_name"
+            android:textColor="@color/member_info_modify_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/member_info_modify_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="60dp"
+            android:layout_toStartOf="@+id/member_info_modify_go_2"
+            android:padding="20dp"
+            android:text="@string/member_info_modify_name"
+            android:textColor="@color/member_info_modify_text"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/member_info_modify_go_2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/arrow_go" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/member_info_modify_line" />
+
+    <RelativeLayout
+        android:id="@+id/member_info_modify_gender_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/google_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="20dp"
+            android:text="@string/member_info_modify_gender"
+            android:textColor="@color/member_info_modify_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/member_info_modify_gender_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/member_info_modify_go_3"
+            android:padding="20dp"
+            android:text="@string/member_info_modify_gender"
+            android:textColor="@color/member_info_modify_text"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/member_info_modify_go_3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/arrow_go" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/member_info_modify_line" />
+
+    <RelativeLayout
+        android:id="@+id/member_info_modify_birth_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/google_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="20dp"
+            android:text="@string/member_info_modify_birth"
+            android:textColor="@color/member_info_modify_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/member_info_modify_birth_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/member_info_modify_go_4"
+            android:padding="20dp"
+            android:text="@string/member_info_modify_birth"
+            android:textColor="@color/member_info_modify_text"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/member_info_modify_go_4"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/arrow_go" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/member_info_modify_line" />
+
+    <RelativeLayout
+        android:id="@+id/member_info_modify_height_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/google_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="20dp"
+            android:text="@string/member_info_modify_height"
+            android:textColor="@color/member_info_modify_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/member_info_modify_height_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/member_info_modify_go_5"
+            android:padding="20dp"
+            android:text="@string/member_info_modify_height"
+            android:textColor="@color/member_info_modify_text"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/member_info_modify_go_5"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/arrow_go" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/member_info_modify_line" />
+
+    <RelativeLayout
+        android:id="@+id/member_info_modify_weight_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/google_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:padding="20dp"
+            android:text="@string/member_info_modify_weight"
+            android:textColor="@color/member_info_modify_text"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/member_info_modify_weight_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/member_info_modify_go_6"
+            android:padding="20dp"
+            android:text="@string/member_info_modify_weight"
+            android:textColor="@color/member_info_modify_text"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/member_info_modify_go_6"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/arrow_go" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/member_info_modify_line" />
+
+</LinearLayout>

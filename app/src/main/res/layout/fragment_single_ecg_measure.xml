@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/single_color">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dip"
+        android:background="@color/member_info_modify_line" />
+
+    <com.dftaihua.dfth_threeinone.widget.BpmLinearLayout
+        android:id="@+id/ecg_bpm"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"/>
+
+    <!--<TextView
+        android:id="@+id/measure_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/measure_time"
+        android:layout_below="@+id/ecg_bpm"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/measure_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/measure_status"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:textSize="@dimen/standard_font" />
+
+    <TextView
+        android:id="@+id/activity_ecg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/measure_time"
+        android:paddingBottom="3dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="3dp"
+        android:textSize="@dimen/standard_font" />-->
+
+    <com.dftaihua.dfth_threeinone.widget.view.ECGMeasureBottomView
+        android:id="@+id/single_measure_bottom_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/measure_start_bg"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+    <com.dftaihua.dfth_threeinone.widget.view.ECGMeasureWaveView
+        android:id="@+id/measure_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/single_measure_bottom_horizontal"
+        android:layout_below="@+id/ecg_bpm" />
+</RelativeLayout>

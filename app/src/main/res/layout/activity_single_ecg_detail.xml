@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detail_home_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/google_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@android:color/transparent">
+
+            <com.dftaihua.dfth_threeinone.widget.view.ECGHistoryWaveView
+                android:id="@+id/ecg_history_wave_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/wave_left"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:rotation="180"
+                android:src="@drawable/setting_more" />
+
+            <ImageView
+                android:id="@+id/wave_right"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/setting_more" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ecg_details_other"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <com.dftaihua.dfth_threeinone.widget.HeartChartView
+                android:id="@+id/ecg_heart_chart"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <LinearLayout
+                android:id="@+id/progress_bar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.dftaihua.dfth_threeinone.widget.ECGLookProgressBar
+                    android:id="@+id/ecg_look_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:maxHeight="10px"
+                    android:progressDrawable="@drawable/twelve_po_seekbar"
+                    android:thumb="@drawable/twelve_thumb"
+                    android:thumbOffset="5px" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ecg_state_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/history_heart"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/single_measure_logo" />
+
+                <TextView
+                    android:id="@+id/ecg_look_bpm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/history_heart"
+                    android:text="096 bpm"
+                    android:textSize="@dimen/standard_font" />
+
+                <TextView
+                    android:id="@+id/ecg_sport_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="平静状态"
+                    android:textColor="@color/single_color"
+                    android:textSize="@dimen/standard_font" />
+
+                <TextView
+                    android:id="@+id/ecg_look_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:text="00:22:12"
+                    android:textSize="@dimen/standard_font" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/tab_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.dftaihua.dfth_threeinone.widget.TabView
+                    android:id="@+id/ecg_data_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:tab_view_item_content="@string/a_data" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent" />
+
+                <com.dftaihua.dfth_threeinone.widget.TabView
+                    android:id="@+id/ecg_doctor_tab"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:tab_view_item_content="@string/a_doctor" />
+            </LinearLayout>
+
+            <com.dftaihua.dfth_threeinone.widget.NoScrollViewPager
+                android:id="@+id/ecg_history_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="2.8" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/change_lead_ll"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:background="@drawable/detail_choose_leader_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/choose_lead" />
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="@string/choose_leader"
+            android:textColor="@color/google_white" />
+    </LinearLayout>
+
+    <com.dftaihua.dfth_threeinone.widget.view.ECGTwelveLeaderView
+        android:id="@+id/ecg_detail_leader_view"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/change_lead_ll"
+        android:layout_marginTop="2dp" />
+</RelativeLayout>

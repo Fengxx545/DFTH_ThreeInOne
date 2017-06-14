@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/view_popup_plus_blood_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/view_popup_plus_blood_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="-40dp"
+            android:layout_toLeftOf="@+id/view_popup_plus_blood_iv"
+            android:background="@drawable/shape_corner_device_popup"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="50dp"
+            android:paddingTop="10dp"
+            android:text="@string/device_popup_tkbp"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/view_popup_plus_blood_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/popup_blood_not_bind" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_popup_plus_single_ecg_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/view_popup_plus_single_ecg_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="-40dp"
+            android:layout_toLeftOf="@+id/view_popup_plus_single_ecg_iv"
+            android:background="@drawable/shape_corner_device_popup"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="50dp"
+            android:paddingTop="10dp"
+            android:text="@string/device_popup_single_ecg"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/view_popup_plus_single_ecg_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/popup_single_ecg_not_bind" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/view_popup_plus_twelve_ecg_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/view_popup_plus_twelve_ecg_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="-40dp"
+            android:layout_toLeftOf="@+id/view_popup_plus_twelve_ecg_iv"
+            android:background="@drawable/shape_corner_device_popup"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="50dp"
+            android:paddingTop="10dp"
+            android:text="@string/device_popup_twelve_ecg"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/view_popup_plus_twelve_ecg_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/popup_twelve_ecg_not_bind" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_corner"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="50dp"
+            android:paddingTop="10dp"
+            android:text="@string/device_popup_twelve_ecg"
+            android:textSize="24dp"
+            android:visibility="gone" />
+
+        <!--<ImageView
+            android:id="@+id/view_popup_plus_close_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/popup_menu_close" />-->
+    </RelativeLayout>
+
+</LinearLayout>

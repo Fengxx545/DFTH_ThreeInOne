@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="main_title" type="id" />
+    <item name="measure_bottom" type="id" />
+    <item name="horizontal_measure_bottom" type="id" />
+    <item name="measure_leader" type="id" />
+    <item name="measure_control" type="id" />
+    <item name="measure_control_father" type="id" />
+    <item name="symptom_text" type="id" />
+    <item name="activity_free_service_get_btn" type="id" />
+
+    <item name="task_card_blood_pressure" type="id" />
+    <item name="task_card_single_ecg" type="id" />
+    <item name="task_card_ecg" type="id" />
+    <item name="task_card_helper" type="id" />
+</resources>

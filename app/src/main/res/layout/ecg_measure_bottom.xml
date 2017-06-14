@@ -1,0 +1,91 @@
+<LinearLayout android:id="@+id/single_measure_bottom_horizontal"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              android:layout_alignParentBottom="true"
+              android:background="@color/single_ecg_measure_bottom_back"
+              android:gravity="center"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/h_beat"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="心率 : "
+            android:textColor="@color/google_white"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/h_show_beat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="@color/google_white"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/h_time"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记录时间 : "
+            android:textColor="@color/google_white"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/h_show_measure_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00:00"
+            android:textColor="@color/google_white"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/position1"
+            android:visibility="gone"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/ecg_pause_image_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:src="@drawable/measure_start"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:id="@+id/position2"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+</LinearLayout>

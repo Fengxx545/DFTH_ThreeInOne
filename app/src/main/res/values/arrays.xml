@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="month_name">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+
+    <string-array name="body_disease_time">
+        <item>出现症状少于20分钟</item>
+        <item>出现症状大于20分钟</item>
+    </string-array>
+
+    <string-array name="body_disease_code">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+
+    <string-array name="body_disease">
+        <item>正常</item>
+        <item>胸骨后或心前区：针刺样或刀扎样疼痛，烧灼感、紧缩感、压迫感、堵塞感、心悸心慌</item>
+        <item>胸部肋骨下（剑突下）或上腹部：疼痛不适，“胃痛”</item>
+        <item>颈部：紧缩感，“掐脖子”感，嗓子痛</item>
+        <item>牙齿：疼痛（一般无局部病变，一般呈发作性或突然变为持续性）</item>
+        <item>左肩或双肩部：酸痛不适，骨缝处疼痛（跟肩胛骨活动无关）</item>
+        <item>后背部：疼痛、不适</item>
+        <item>右胸部：疼痛</item>
+        <item>腹部：肚脐周边痛</item>
+        <item>头部：头痛、头晕</item>
+        <item>双上肢、双下肢、双足：酸胀无力伴或不伴足底疼痛</item>
+        <item>眼睛：视力突然模糊，黑矇，双眼紧闭欲睁不开</item>
+        <item>呼吸：困难、憋气</item>
+        <item>体表：出汗</item>
+        <item>恶心和/或呕吐</item>
+        <item>晕厥、抽搐伴或不伴大小便失禁</item>
+        <item>不敢活动</item>
+        <item>出现下意识动作（Levine征）：左胸痛右手握拳放在左胸痛处，右胸痛左手握拳放在右胸痛处</item>
+        <item>辗转反侧,焦虑不安</item>
+        <item>濒死感</item>
+        <item>全身乏力,精神萎靡</item>
+    </string-array>
+    <string-array name="body_disease_time_code" translatable="false">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+
+    <string-array name="leader_out_names">
+        <item>肢体</item>
+        <item>肢体</item>
+        <item>肢体</item>
+        <item>肢体</item>
+        <item>V1</item>
+        <item>V2</item>
+        <item>V3</item>
+        <item>V4</item>
+        <item>V5</item>
+        <item>V6</item>
+    </string-array>
+    <string-array name="leader_names">
+        <item>I</item>
+        <item>II</item>
+        <item>III</item>
+        <item>avR</item>
+        <item>avL</item>
+        <item>avF</item>
+        <item>V1</item>
+        <item>V2</item>
+        <item>V3</item>
+        <item>V4</item>
+        <item>V5</item>
+        <item>V6</item>
+    </string-array>
+
+</resources>
