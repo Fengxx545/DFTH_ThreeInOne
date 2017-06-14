@@ -120,7 +120,6 @@ public abstract class BaseActivity extends FragmentActivity {
         intent.setAction(Constant.Action.ACTIVITY_RESUME);
         sendBroadcast(intent);
         DfthPushManager.onActivityStart(this);
-
     }
 
     @Override
